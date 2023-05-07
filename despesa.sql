@@ -1,7 +1,8 @@
-CREATE DATABASE despesas;
+CREATE DATABASE despesa;
+
 
 CREATE TABLE despesas (
-id integer PRIMARY KEY,
+id bigserial PRIMARY KEY,
 credor varchar(200) NOT NULL,
 data_vencimento date NOT NULL,
 data_pagamento date,

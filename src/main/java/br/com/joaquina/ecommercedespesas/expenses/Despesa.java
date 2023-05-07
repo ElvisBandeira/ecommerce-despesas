@@ -4,15 +4,16 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 @Data
 @Entity
 @Table(name = "despesas")
-public class Despesas {
+public class Despesa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(nullable = false)
     private String credor;
@@ -29,4 +30,8 @@ public class Despesas {
 
     @Column(nullable = false)
     private String status = "Pendente";
+
 }
+
+
+
